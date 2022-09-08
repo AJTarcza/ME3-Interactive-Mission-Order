@@ -1,0 +1,105 @@
+@font-face {
+  font-family: massEffect;
+  src: url("fonts/me123.ttf");
+}
+
+.header {
+	background-image: url("images/header.png");
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.header img {
+	display: center;
+	max-width: 25vw;
+	max-height: 25vh;
+	width: auto;
+	height: auto;
+	padding: 1.5vh;
+	color: white;
+}
+
+.reset {
+	position: fixed;
+	right: 1vw;
+	top: 3vh;
+	cursor: pointer;
+}
+
+.reset img {
+	display: center;
+	max-width: 5vw;
+	max-height: 5vh;
+	width: auto;
+	height: auto;
+	padding: 1.5vh;
+	color: white;
+}
+
+body {
+	background-image: url("images/bg_infinite.png");
+	background-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.nodeContainer, .subContainer {
+	position: relative;
+	width: 90vw;
+}
+
+.unfinishedNode, .finishedNode, .sectionHeader, .footnote {
+	background-size: 100% 100%;
+	width: fit-content;
+	height: fit-content;
+	block-size: fit-content;
+	margin-left: 0.4vw;
+}
+
+.unfinishedNode:not(.sectionHeader) {
+	background-image: url("images/bar_blue.png");
+}
+
+.sectionHeader:not(.finishedNode) {
+	background-image: url("images/bar_green.png");
+}
+
+.finishedNode {
+	background-image: url("images/bar_grey.png");
+	margin-left: 1vw;
+}
+
+.finishedNode .text {
+	opacity: 25%;
+}
+
+.unfinishedNode:hover, .finishedNode:hover {
+	background-image: url("images/bar_red.png");
+	cursor: pointer;
+}
+
+.text {
+	font-size: 1.0vw;
+	color: white;
+	font-family: massEffect;
+	padding: 0.3em;
+}
+
+.subContainer {
+	position: relative;
+	left: 4vw;
+}
+
+.footnoteContainer {
+	position: relative;
+	left: 2vw;
+	width: 75%;
+}
+
+.footnote {
+	background-image: url("images/bar_grey.png");
+}
+
+.footnote .text{
+	font-size: 0.8vw;
+}

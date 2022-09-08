@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="nodes.js"></script>
+	<script src="storage.js"></script>
+	
+	<div class="header">
+		<img src="images/LOGO.png" alt="Mass Effect 3 logo">
+		
+		<!-- Reset Button -->
+		<span class="reset" alt="Reset button">
+			<img src="images/RESET.png" alt="Reset" onclick="resetAllNodes()">
+		</span>
+		<!-- End Reset Button -->
+	</div>
+
+</head>
+
+<body onload="setup()">
+	<!-- Vancouver -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Vancouver</p>
+		</div>
+	</div>
+	<!-- End Vancouver -->
+	
+	<!-- Mars -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Mars</p>
+		</div>
+	</div>
+	<!-- End Mars -->
+	
+	<!-- Palaven -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Palaven (Menae)</p>
+		</div>
+	</div>
+	<!-- End Palaven -->
+	
+	<!-- Eden Prime -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Eden Prime (From Ashes DLC)</p>
+		</div>
+	</div>
+	<!-- End Eden Prime -->
+	
+	<!-- Sur'kesh -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Sur'kesh</p>
+		</div>
+	</div>
+	<!-- End Sur'kesh -->
+	
+	<!-- Grissom Academy -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Grissom Academy</p>
+		</div>
+	</div>
+	<!-- End Grissom Academy -->
+	
+	<!-- Tuchanka Arc -->
+	<div class="nodeContainer">
+		<div class="sectionHeader unfinishedNode">
+			<p class="text">Tuchanka</p>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Krogan Scouts</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Platoon</p>
+			</div>
+			<div class="subContainer">
+				<div class="unfinishedNode">
+					<p class="text">Bomb</p>
+				</div>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Priority: Tuchanka</p>
+			</div>
+			<div class="footnoteContainer">
+				<div class="footnote">
+					<p class="text"><strong>NOTE</strong>: Completing this mission will lead to a large story milestone that has the potential to lock out some side content if it hasn’t already been completed.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Tuchanka Arc -->
+	
+	<!-- Citadel II -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Priority: The Citadel II (Visit Salarian Councilor)</p>
+		</div>
+	</div>
+	<!-- End Citadel II -->
+	
+	<!-- Omega Arc -->
+	<div class="nodeContainer">
+		<div class="sectionHeader unfinishedNode">
+			<p class="text">Omega DLC [Citadel -> Dock 42]</p>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Omega Landing</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Talon Territory</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">The Mines</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Assault on Afterlife</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Omega Arc -->
+	
+	<!-- Rannoch Arc -->
+	<div class="nodeContainer">
+		<div class="sectionHeader unfinishedNode">
+			<p class="text">Rannoch</p>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Geth Dreadnought</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Admiral Koris</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Geth Fighter Squadrons</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Priority: Rannoch</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Rannoch Arc -->
+	
+	<!-- Citadel Story -->
+	<div class="nodeContainer">
+		<div class="sectionHeader unfinishedNode">
+			<p class="text">Citadel DLC Main Story [Citadel -> Personal Apartment]</p>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Dinner with Joker</p>
+			</div>
+			<div class="footnoteContainer">
+				<div class="footnote">
+					<p class="text"><strong>NOTE</strong>: Highly recommend you switch your casual outfit to something more fancy (either option 2 or 6) before leaving your apartment, otherwise certain banter will feel out of place</p>
+				</div>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Silver Coast Casino</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Citadel Archives</p>
+			</div>
+			<div class="footnoteContainer">
+				<div class="footnote">
+					<p class="text"><strong>NOTE</strong>: Finish the story of the DLC, do visits, and buy the party supplies but <strong><em>DO NOT</em></strong> send the party invitations</p>
+				</div>
+			</div>
+			<div class="footnoteContainer">
+				<div class="footnote">
+					<p class="text"><strong>NOTE</strong>: When doing the first round of silversun visits, make sure to visit the arcade claw machine and the suspicious device on Casino 1st floor</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Citadel Story -->
+	
+	<!-- Ex-Cerberus -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Ex-Cerberus Scientists</p>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text">Afterwards, visit silversun strip (<strong>NOTE</strong>: Make sure to visit casino bar)</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Ex-Cerberus -->
+	
+	<!-- Monastery -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Asari Monastery</p>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text">Afterwards, visit silversun strip (<strong>NOTE</strong>: Make sure to visit casino bar)</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Monastery -->
+
+	<!-- Citadel III -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Priority: The Citadel III (Visit Asari Councilor)</p>
+		</div>
+	</div>
+	<!-- End Citadel III -->
+	
+	<!-- Thessia -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Thessia</p>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text"><strong>HIGHLY RECOMMEND</strong> bringing Javik as 2nd squadmate</p>
+			</div>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text"><strong>NOTE</strong>: A few more silversun strip visits will become available at this point but doing them now kind of messes with the vibe after this mission so I recommend waiting until after Sanctuary to do them</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Thessia -->
+	
+	<!-- Sanctuary -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Sanctuary</p>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text">Afterwards, visit silversun strip</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Sanctuary -->
+	
+	<!-- Leviathan Arc -->
+	<div class="nodeContainer">
+		<div class="sectionHeader unfinishedNode">
+			<p class="text">Leviathan DLC [Citadel -> Dr. Bryson’s Lab]</p>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">T-GES Mineral Works</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Dig Site</p>
+			</div>
+		</div>
+		<div class="subContainer">
+			<div class="unfinishedNode">
+				<p class="text">Leviathan</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Leviathan Arc -->
+	
+	<!-- Housecleaning -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text"><strong>HOUSECLEANING</strong> (Finish all side content  you want to besides the citadel party)</p>
+		</div>
+	</div>
+	<!-- End Housecleaning -->
+	
+	<!-- Citadel Party -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Citadel Party</p>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text"><strong>NOTE</strong>: This is personal preference but I feel like switching your casual outfit to something like the N7 hoodie (assuming you’re not already wearing it) makes sense given that this is a very casual party</p>
+			</div>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text"><strong>NOTE</strong>: While both types of parties have their pros and cons, I personally prefer the full energetic party. At the very least I recommend choosing the energetic start and then transitioning to whichever style you prefer since I found the quiet start to have very similar interactions but in a less enjoyable way</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Citadel Party -->
+	
+	<!-- Cerberus HQ -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Cerberus HQ</p>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text"><strong>IMPORTANT</strong>: This is essentially the point of no return for the endgame</p>
+			</div>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text"><strong>NOTE</strong>: Whoever you romanced will have some unique dialogue if brought as a squadmate</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Cerberus HQ -->
+	
+	<!-- Earth -->
+	<div class="nodeContainer">
+		<div class="unfinishedNode">
+			<p class="text">Earth</p>
+		</div>
+		<div class="footnoteContainer">
+			<div class="footnote">
+				<p class="text"><strong>HIGHLY RECOMMEND</strong> bringing whoever you romanced as a squadmate, at least for the section after your speech at the war table</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Earth -->
+	
+</body>
+
+</html>
