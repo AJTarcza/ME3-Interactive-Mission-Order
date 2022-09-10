@@ -111,6 +111,9 @@ function setup() {
 	//Both node lists are in sync so we can apply the local list to the document
 	if(synced)
 		applyNodeList(localList);
+	
+	//Enable animations for the body
+	document.querySelector("body").classList.remove("preload");
 }
 
 /**
@@ -312,3 +315,6 @@ function resetAllNodes() {
 	
 	storeNodeList();
 }
+
+//Run the setup function once the DOM is fully loaded
+window.addEventListener('DOMContentLoaded', setup());
