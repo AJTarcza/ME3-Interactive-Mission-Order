@@ -3,13 +3,22 @@
 
 <head>
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	<title>Interactive Mission Order</title>
 	
 	<div class="header">
 		<img src="images/logo.png" alt="Mass Effect 3 logo">
 		
+		<!-- Github Button -->
+		<span class="github" alt="Source Code" title="View Source Code">
+			<a href="https://github.com/AJTarcza/ME3-Interactive-Mission-Order" target="_blank"><i class="fa fa-github"></i></a>
+		</span>
+		<!-- End Github Button -->
+		
 		<!-- Reset Button -->
-		<span class="reset" alt="Reset button">
+		<span class="reset" alt="Reset button" title="Reset All Nodes">
 			<img src="images/reset.png" alt="Reset" onclick="resetAllNodes()">
 		</span>
 		<!-- End Reset Button -->
@@ -351,7 +360,7 @@
 	</div>
 	<!-- End Earth -->
 	
-	<script src="storage.js"></script>
-	<script src="nodes.js"></script>
+	<script src="scripts/storage.js"></script>
+	<script src="scripts/nodes.js"></script>
 </body>
 </html>

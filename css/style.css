@@ -1,10 +1,10 @@
 @font-face {
   font-family: massEffect;
-  src: url("fonts/me123.ttf");
+  src: url("../fonts/me123.ttf");
 }
 
 .header {
-	background-image: url("images/header.png");
+	background-image: url("../images/header.png");
 	background-size: 100% 100%;
 	text-align: center;
 }
@@ -36,8 +36,20 @@
 	color: white;
 }
 
+.github {
+	position: absolute;
+	left: 1vw;
+	top: 4vh;
+	cursor: pointer;
+	font-size: 3vw;
+}
+
+.fa-github {
+	color: white;
+}
+
 body {
-	background-image: url("images/bg_infinite.png");
+	background-image: url("../images/bg_infinite.png");
 	background-size: 100%;
 	margin: 0;
 	padding: 0;
@@ -65,15 +77,15 @@ body {
 }
 
 .unfinishedNode:not(.sectionHeader) {
-	background-image: url("images/bar_blue.png");
+	background-image: url("../images/bar_blue.png");
 }
 
 .sectionHeader:not(.finishedNode) {
-	background-image: url("images/bar_green.png");
+	background-image: url("../images/bar_green.png");
 }
 
 .finishedNode {
-	background-image: url("images/bar_grey.png");
+	background-image: url("../images/bar_grey.png");
 	margin-left: 1vw;
 }
 
@@ -82,7 +94,7 @@ body {
 }
 
 .unfinishedNode:hover, .finishedNode:hover {
-	background-image: url("images/bar_red.png");
+	background-image: url("../images/bar_red.png");
 	cursor: pointer;
 }
 
@@ -105,7 +117,7 @@ body {
 }
 
 .footnote {
-	background-image: url("images/bar_grey.png");
+	background-image: url("../images/bar_grey.png");
 }
 
 .footnote .text{
