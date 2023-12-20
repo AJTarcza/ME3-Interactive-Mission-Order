@@ -84,7 +84,7 @@ function attachOnClickMethods() {
 				if(children[i + 1] != null && children[i + 1].classList.contains(FOOTNOTE_CONTAINER_NAME)) {
 					children[i].onclick = function() {
 						toggleState(this, false);
-						updateFootnotes(children[i]);
+						updateFootnotes(this);
 					};
 				}
 				else {
